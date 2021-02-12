@@ -1,0 +1,199 @@
+/* Global variables */
+:root{
+    --predefined-color: #C271FF;
+}
+
+/** Task 1 - Styles **/
+
+header {
+	background-image: url("images/pic_1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logoHeader {
+	width: auto;
+	height: 30px;
+	
+}
+
+* {
+	font-family: 'Source Sans Pro' !important;
+	
+}
+
+@media (max-width: 1200px) {
+	header {
+		background-position: 50% 50%;
+	}
+
+	.users img {
+		width: 75% !important;
+		height: auto;
+	}
+}
+
+.nav-item {
+	font-size: 12px !important;
+}
+
+.btn {
+	background-color: var(--predefined-color) !important;
+	border-color: var(--predefined-color) !important;
+	font-size: 14px;
+}
+
+.btn:hover, .btn:active {
+	background-color: var(--predefined-color) !important;
+	border-color: var(--predefined-color) !important;
+	opacity: 0.9;
+}
+
+.users-section {
+	margin-top: 8rem;
+}
+
+.text-violet {
+	color: var(--predefined-color);
+}
+
+.users {
+	margin: 5rem 0;
+}
+
+.users img {
+	width: 75% !important;
+	height: auto;
+}
+
+#nav-menu-btn {
+	background-color: white;
+	width: 13px;
+	height: 2px;
+	position: absolute;
+	top: 3rem;
+}
+
+#nav-menu-btn::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: white;
+	position: relative;
+	top: -0.5rem;
+}
+
+#nav-menu-btn::after {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 2px;
+	background-color: white;
+	position: relative;
+	top: 0.4rem;
+}
+
+@media (max-width: 576px) {
+	header {
+		background-position: 45% 50%;
+	}
+
+	.hamburger {
+		max-height: 0px;
+		overflow: hidden;
+		transition: max-height 0.5s ease-in-out;
+	}
+	
+	#nav-toggle:checked ~ .hamburger {
+		max-height: 100vh;
+		overflow: hidden;
+	}
+
+	.display-1 {
+		font-size: 4rem;
+	}
+
+    .users .h5 {
+		font-size: 1.1rem;
+	}
+}
+
+/** Task 2 - Styles **/
+
+.bg-violet{
+	background-color: var(--predefined-color) !important;
+}
+
+/** Task 3 - Styles **/
+.video-card {
+    width: 250px;
+}
+
+img.circle-thumb {
+    width: 150px;
+	height: 150px;
+
+}
+
+img.logo {
+    height: 30px;
+}
+img.star {
+    height: 15px;
+    width: 15px;
+}
+
+img.circle-thumb-small {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/** Task 4 - Styles **/
+
+.bg-sectionfree {
+	background-color: #071629;
+}
+
+/** Task 6 - styles **/
+
+.social > svg {
+    fill: white;
+  }
+
+  /** Task 7 - styles  **/
+  .pricing {
+	background-image: url(images/pic_2.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+/** Task 12 - Styles **/
+.courses {
+	background-image: url(images/pic_3.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.tcourse {
+	font-size: 32px;
+	font-family: 'Coiny' !important;
+	font-weight: 400;
+}
+
+
+/** Task 13 **/
+
+.search-icon {
+    font-family: 'holberton_school-icon';
+    font-size: 15px;
+}
+
+.searchbar {
+    background-color: #d195ff;
+    border-radius: 3px;
+}
